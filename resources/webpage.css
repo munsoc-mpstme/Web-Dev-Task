@@ -1,0 +1,95 @@
+body{
+    background-color:#363330;
+}
+
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;  
+}
+
+ h1:hover {
+     text-decoration: underline;
+     
+}
+
+ .header, .button {
+    color:rgb(224, 220, 220);
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    background-color:#363330 ;
+    border-style:none;
+    
+}
+
+  .column {
+    float: left;
+    width: 24%;
+    padding: 10px;
+    height: 300px;
+    color:rgb(224, 220, 220);
+    font-size:30px;
+    font-weight: 200;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style:none ;
+    padding: 20px 5px 20px 5px;
+    border: 5px;
+    margin: 0;
+    text-align:center; 
+    }
+
+   .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+       } 
+} 
+
+
+.flip-container:hover .column {
+    transform: rotateY(180deg);
+}
+
+.column {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+} 
+ .back {
+    z-index: 1; 
+    transform: rotateY(180deg);
+   
+}
+
+    
+
+
+
+span {
+color:rgb(224, 220, 220);
+font-weight: 100;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+border-style:none ;
+width: 100%;
+padding: 100px 75px 100px 75px;
+border: 5px solid red;
+margin: 0;
+background-color: red;
+text-align:center;
+}
