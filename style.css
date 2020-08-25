@@ -1,0 +1,314 @@
+*{
+  margin: 0;
+  text-decoration: none;
+}
+body{
+  background: #808080;
+   padding: 15px;
+}
+a{
+  text-align: center;
+  display:block;
+  color: #000000;
+}
+a.out{
+    position: relative;
+}
+a.out:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  padding: 1px;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.5s ease-in-out;
+  bottom: 0;
+  left: 0;
+}
+a.out:hover:before{
+  visibility: visible;
+  transform: scaleX(0.2);
+}
+input[type=button]{
+  background: transparent;
+  border: none;
+  font-family: "calibri";
+  color: white;
+  font-size: 50px;
+}
+input[type=button]{
+  cursor: pointer;
+}
+
+
+table{
+  color: white;
+  margin: auto;
+  padding: 15px;
+  font-size : 20px;
+  font-family: "calibri";
+}
+table{
+  cursor: pointer;
+}
+
+.hello{
+  margin: auto;
+  background: #428af5;
+  height: 300px;
+  line-height: 300px;
+  width: 300px;
+  text-align:center;
+}
+.welcome{
+  margin: auto;
+  background: #8442f5;
+  height: 300px;
+  line-height: 300px;
+  width: 300px;
+  text-align:center;
+}
+.to{
+  margin: auto;
+  background: #42f55d;
+  height: 300px;
+  line-height: 300px;
+  width: 300px;
+  text-align:center;
+}
+.the{
+  margin: auto;
+  background: #f5425a;
+  height: 300px;
+  line-height: 300px;
+  width: 300px;
+  text-align:center;
+}
+.tech{
+  margin: auto;
+  background: #f5425a;
+  height: 300px;
+  line-height: 300px;
+  width: 300px;
+  text-align:center;
+}
+.department{
+  margin: auto;
+  height: 300px;
+  line-height: 300px;
+  width: 300px;
+  background: #42f55d;
+  text-align:center;
+}
+.of{
+  margin: auto;
+  height: 300px;
+  line-height: 300px;
+  width: 300px;
+  background: #8442f5;
+  text-align:center;
+}
+.munsoc{
+  margin: auto;
+  background: #428af5;
+  height: 300px;
+  line-height: 300px;
+  width: 300px;
+  text-align:center;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.hello:hover .inner {
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back {
+  color: white;
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+
+.inner1{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.welcome:hover .inner1 {
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+.front1, .back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back1 {
+  color: white;
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+
+.inner2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.to:hover .inner2 {
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+.front2, .back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back2 {
+  color: white;
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+
+.inner3{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.the:hover .inner3 {
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+.front3, .back3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back3 {
+  color: white;
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+
+.inner4{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transform-origin:center;
+}
+.tech:hover .inner4 {
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+.front4, .back4 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+}
+.back4{
+  color: white;
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+
+.inner5{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.department:hover .inner5 {
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+.front5, .back5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back5{
+  color: white;
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+
+.inner6{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.of:hover .inner6 {
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+.front6, .back6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back6{
+  color: white;
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+
+.inner7{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.munsoc:hover .inner7 {
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+.front7, .back7 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back7 {
+  color: white;
+  transform: rotateY(180deg);
+  transform-origin:center;
+}
+
