@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function prom(){
+            var x=prompt("enter random text")
+            var z="you entered "+ x
+            let y=alert(z)
+            console.log(y)}
+        </script>
+        <style>
+            #main
+            {
+                margin:20px 60px 60px 60px;
+                position: relative;
+            }
+            .square{
+            height: 300px;
+            width: 25%;
+            float:left;
+            }
+            div.mun
+            {
+                padding-top: 40px;
+                position: relative;
+                text-align: center;
+                width:400px;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+
+            p
+            {
+                text-align: center;
+                padding-top: 130px;
+                color:white;
+            }
+            a {
+                
+                text-decoration: none;
+                font-size: 60px;
+                color: white;
+              }
+              a:after {
+            content: '';
+            display: block;
+             position: absolute;
+            left: 50%;
+            right:50%;
+            height: 4px;
+            width: 0;
+
+                }
+             .link:after {
+                transition: width 1s ease,  left 1s ease;
+                }
+
+            .link:hover:after {
+                 width: 100%;
+                 left: 0;
+                right:0;
+                 background: white;
+                    }
+
+
+        </style>
+
+    </head>
+    <body style="background-color:#323032;">
+        <div class="mun">        
+            <a class="link" href="#" onclick='prom()'>MUNSOC Tech</a>
+        </div>
+
+        <div id="main">
+            <div class="square" style="background-color:#2D7CED;" ><p>HELLO</p></div>
+            <div class="square" style="background-color:#890CEA;"><p>WELCOME</p></div>
+            <div class="square" style="background-color:#2DD63E;"><p>TO</p></div>
+            <div class="square" style="background-color:#B5203D;"><p>THE</p></div>
+            <div class="square" style="background-color:#B5203D;"><p>TECH</p></div>
+            <div class="square" style="background-color:#2DD63E;"><p>COMMITTEE</p></div>
+            <div class="square" style="background-color:#890CEA;"><p>OF</p></div>
+            <div class="square" style="background-color:#2D7CED;" ><p>MUNSOC</p></div>
+        </div>
+    </body>
+</html>
